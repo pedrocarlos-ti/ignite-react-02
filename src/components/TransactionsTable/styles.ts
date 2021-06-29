@@ -28,10 +28,18 @@ export const Container = styled.div`
 
 			&.deposit {
 				color: var(--green);
+
+				::before {
+					content: "+ ";
+				}
 			}
 
 			&.withdraw {
 				color: var(--red);
+
+				::before {
+					content: "- ";
+				}
 			}
 		}
 	}
